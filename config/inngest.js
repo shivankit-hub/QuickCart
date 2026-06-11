@@ -27,7 +27,7 @@ export const syncUserCreation = inngest.createFunction(
 // Inngest function to update user data in database
 export const syncUserUpdate = inngest.createFunction(
     {
-        iid: 'update-user-from-clerk'
+        id: 'update-user-from-clerk'
     },
     { event: 'clerk/user.updated' },
     async ({event}) => {
